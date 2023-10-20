@@ -1,0 +1,77 @@
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  width: 90%;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 40px;
+}
+
+
+#editor {
+  width: 30%;
+  height: 80vh;
+  color: aliceblue;
+  background-color: #2f2f2f;
+  font-size: 18px;
+  resize: none;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  border-color: #e6fae6;
+}
+
+#preview {
+  margin-top: 30px;
+  width: 80%;
+  height: 160vh;
+  color: rgb(234, 238, 247);
+  background-color: #2f2f2f;
+  font-size: 18px;
+  resize: none;
+  padding: 10px;
+  overflow: auto;
+  border-color: white;
+}
+
+h1.welcome {
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(45deg, #ff6b6b, #ffa45c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 10px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+/* Hover effect */
+h1.welcome:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+@media screen and (min-width: 768px) {
+  .boxes-container {
+    flex-direction: row;
+    width: 75%;
+  }
+
+  #editor {
+    width: 50%;
+    height: 77vh;
+    margin-top: 12px;
+    margin-right: 15px;
+  }
+
+  #preview {
+    width: 50%;
+    height: 80vh;
+  }
+}
